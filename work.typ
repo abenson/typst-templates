@@ -10,7 +10,7 @@
   if disableColor == false and classification != none {
     if regex("UNCLASSIFIED") in classification {
        classcolor = rgb("#007a33") // Green for UNCLASSIFIED[//FOUO]
-    } else if regex("CUI") in classification {
+    } else if regex("CUI|CONTROLLED") in classification {
        classcolor = rgb("#502b85") // Purple for C(ontrolled) U(Unclass) I(nfo)
     } else if regex("CONFIDENTIAL") in classification {
        classcolor = rgb("#0033a0") // Blue for CONFIDENTIAL
