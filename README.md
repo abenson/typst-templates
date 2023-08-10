@@ -2,8 +2,8 @@
 
 SPDX-License Identifier: Unlicense
 
-These files are meant to be used with Typst v`0.7.0`.  They can be made to work
-with older versions, though. I believe the only thing I'm using from v`0.7.0`
+These files are meant to be used with Typst `v0.7.0`.  They can be made to work
+with older versions, though. I believe the only thing I'm using from `v0.7.0`
 currently is `float:true`.
 
 ## Status
@@ -13,8 +13,8 @@ have most of the old `work` template implemented, named `report`, but the
 `work-plain` template is fully implemented.  They were combined in a single file
 since they share several parts.
 
-- [x] `work` => `classified/report`
-- [x] `work-plain => `classified/simple`
+- [x] `work` => `work/report`
+- [x] `work-plain => `work/simple`
 - [ ] `mla`
 - [ ] `memo`
 - [ ] `letter`; I may borrow and tweak Typst's `letter` template
