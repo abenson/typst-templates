@@ -10,14 +10,14 @@
   if disableColor == false and classification != none {
     if regex("UNCLASSIFIED") in classification {
        classcolor = rgb("#007a33") // Green for UNCLASSIFIED[//FOUO]
-    } else if regex("^CUI") in classification {
+    } else if regex("CUI") in classification {
        classcolor = rgb("#502b85") // Purple for C(ontrolled) U(Unclass) I(nfo)
-    } else if regex("^CONFIDENTIAL") in classification {
+    } else if regex("CONFIDENTIAL") in classification {
        classcolor = rgb("#0033a0") // Blue for CONFIDENTIAL
-    } else if regex("^SECRET") in classification {
-       classcolor = rgb("#c8102e") // Red for SECRET
-    } else if regex("^TOP SECRET") in classification {
+    } else if regex("TOP SECRET") in classification {
        classcolor = rgb("#ff8c00") // Orange for Collateral TS
+    } else if regex("SECRET") in classification {
+       classcolor = rgb("#c8102e") // Red for SECRET
     } else if regex("//.*//") in classification {
        classcolor = rgb("#fce83a") // Yellow for any SCI (CLASS//SC,I//ETC)
     } // else, black because we don't know
