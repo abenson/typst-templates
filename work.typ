@@ -159,7 +159,7 @@
     classification = "CUI"
   }
 
-  let classcolor = classifiedcolor(classification)
+  let classcolor = colorForClassification(classification)
   let header = align(center, text(fill: classcolor, strong(classification)))
   let footer = [
     #h(1fr) #text(fill: classcolor, strong(classification))
